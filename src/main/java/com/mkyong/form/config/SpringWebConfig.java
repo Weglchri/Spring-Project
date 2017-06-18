@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan({ "com.mkyong.form.web", "com.mkyong.form.service", "com.mkyong.form.dao", "com.mkyong.form.model" })
+@ComponentScan({ "com.mkyong.form.web", "com.mkyong.form.service", "com.mkyong.form.dao", "com.mkyong.form.model", "com.mkyong.form.sequence" })
 
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
 

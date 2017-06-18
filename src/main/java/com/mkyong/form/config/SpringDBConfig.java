@@ -16,7 +16,6 @@ public class SpringDBConfig {
 	@Bean
 	public DataSource getDataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		System.out.println(dataSource);
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/prototypedb");
 		dataSource.setUsername("root");

@@ -32,7 +32,7 @@ public class UserDaoImpl implements UserDao {
 		try {
 			conn = dataSource.getConnection();
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setInt(1, user.getUserId());
+			ps.setInt(1, user.getId());
 			ps.setString(2, user.getFirstname());
 			ps.setString(3, user.getLastname());
 			ps.executeUpdate();
@@ -61,7 +61,7 @@ public class UserDaoImpl implements UserDao {
 		try {
 			conn = dataSource.getConnection();
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setInt(3, user.getUserId());
+			ps.setInt(3, user.getId());
 			ps.setString(1, user.getFirstname());
 			ps.setString(2, user.getLastname());
 

@@ -7,31 +7,32 @@ public class User {
     private String lastname;
 
     public User(int id, String firstname, String lastname) {
-         setUserId(id);
+         setId(id);
          setFirstname(firstname);
          setLastname(lastname);
     }
 
     public User(){}
 
-    private void setUserId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    private void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    private void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
-    public int getUserId(){
+    public int getId(){
         return id;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
     public String getFirstname() { return firstname;}
 
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
     public String getLastname() { return lastname; }
+
 }
 
