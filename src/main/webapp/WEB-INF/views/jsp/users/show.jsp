@@ -8,6 +8,9 @@
 <html lang="en">
 <head>
 </head>
+
+        <jsp:include page="../parts/header.jsp" />
+
 		<body>
 			<div class="container">
 				<div class="row">

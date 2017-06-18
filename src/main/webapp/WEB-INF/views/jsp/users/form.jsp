@@ -6,6 +6,9 @@
 <head>
 </head>
     <body>
+
+        <jsp:include page="../parts/header.jsp" />
+
         <form:form method = "POST" action="/users" modelAttribute="userForm" >
             <form:hidden path="id" />
             Firstname: <form:input type="text" path="firstname" id="firstname"/>

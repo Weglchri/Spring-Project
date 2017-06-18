@@ -1,7 +1,7 @@
-package com.mkyong.form.sequence;
+package at.fhj.swd.sequence;
 
-import com.mkyong.form.dao.UserDao;
-import com.mkyong.form.model.User;
+import at.fhj.swd.dao.UserDao;
+import at.fhj.swd.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

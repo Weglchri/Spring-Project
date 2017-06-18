@@ -3,9 +3,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
-<body>
+    <head>
+    </head>
+    <body>
+        <jsp:include page="../parts/header.jsp" />
+
 		<h1>All Users</h1>
 		<table>
 			<c:forEach var="user" items="${users}">
@@ -22,7 +24,9 @@
 					<td>
 						<button onclick="location.href='/users/${user.id}'">Show</button>
 						<button onclick="location.href='/users/${user.id}/update'">Change</button>
-						<button formmethod="post" onclick="location.href='/users/${user.id}/delete'">Delete</button>
+                        <form id="delete" method="POST" action="/users/${user.id}/delete">
+                            <input type="submit" name="delete" value="delete"/>
+                        </form>
 					</td>
 				</tr>
 			</c:forEach>

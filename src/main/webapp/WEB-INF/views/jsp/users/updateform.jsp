@@ -5,6 +5,9 @@
 <html lang="en">
 <head>
 </head>
+
+    <jsp:include page="../parts/header.jsp" />
+
     <body>
         <form:form method = "POST" action="/users/update" modelAttribute="userForm" >
             <form:hidden path="id" />

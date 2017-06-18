@@ -1,8 +1,8 @@
-package com.mkyong.form.web;
+package at.fhj.swd.web;
 
-import com.mkyong.form.model.User;
-import com.mkyong.form.sequence.SequenceGenerator;
-import com.mkyong.form.service.UserService;
+import at.fhj.swd.model.User;
+import at.fhj.swd.sequence.SequenceGenerator;
+import at.fhj.swd.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -56,7 +56,6 @@ public class UserController {
 		user.setId(sequenceGenerator.generateId());
 		userService.save(user);
 		return "redirect:/users/" + user.getId();
-
 	}
 
 	// show update form
@@ -72,7 +71,6 @@ public class UserController {
 	public String updateUser(@ModelAttribute("userForm") @Validated User user, BindingResult result, Model model) {
 		userService.change(user);
 		return "redirect:/users/" + user.getId();
-
 	}
 
 	// delete user
@@ -80,7 +78,6 @@ public class UserController {
 	public String deleteUser(@PathVariable("id") int id) {
 		userService.delete(id);
 		return "redirect:/users";
-
 	}
 
 	//show user
@@ -92,7 +89,6 @@ public class UserController {
 		}
 		model.addAttribute("user", user);
 		return "users/show";
-
 	}
 
 }
