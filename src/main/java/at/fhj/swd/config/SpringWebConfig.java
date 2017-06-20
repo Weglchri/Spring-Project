@@ -12,8 +12,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan({ "at.fhj.swd.web", "at.fhj.swd.service", "at.fhj.swd.dao", "at.fhj.swd.model", "at.fhj.swd.sequence" })
-
+@ComponentScan(basePackages = {"at.fhj.swd"})
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
 
 	@Override

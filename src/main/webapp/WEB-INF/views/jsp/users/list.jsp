@@ -28,7 +28,7 @@
 								<button class="btn btn-success" onclick="location.href='/users/${user.id}'">Show</button>
 								<button class="btn btn-success" onclick="location.href='/users/${user.id}/update'">Change</button>
                                 <form class="form-group" id="delete" method="POST" action="/users/${user.id}/delete">
-                                    <button class="form-control" class="btn btn-default" type="submit" >delete</button>
+                                    <button class="btn btn-default" type="submit" >delete</button>
                                 </form>
                             </div>
 						</td>
