@@ -47,7 +47,7 @@ public class UserController {
 	public String showAddUserForm(Model model) {
 		User user = new User();
 		model.addAttribute("userForm", user);
-		return "users/form";
+		return "users/addform";
 	}
 
 	// save user

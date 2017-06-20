@@ -6,27 +6,36 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
+<body>
 
-        <jsp:include page="../parts/header.jsp" />
+		<jsp:include page="../parts/header.jsp" />
+        <div class="container">
+            <h2>User ${user.firstname}</h2>
 
-		<body>
-			<div class="container">
-				<div class="row">
-					<label>UserID</label>
-					<div>${user.id}</div>
-				</div>
+        <table class="table table-striped">
 
-				<div class="row">
-					<label>Firstname</label>
-					<div>${user.firstname}</div>
-				</div>
+				<tr>
+                    <td>
+                        <label>UserID</label>
+                        <div>${user.id}</div>
+                    </td>
+                </tr>
+				<tr>
+                    <td>
+                        <label>Firstname</label>
+                        <div>${user.firstname}</div>
+                    </td>
+                </tr>
 
-				<div class="row">
-					<label>Lastname</label>
-					<div>${user.lastname}</div>
-				</div>
-			</div>
-		</body>
+				<tr>
+                    <td>
+                        <label>Lastname</label>
+					    <div>${user.lastname}</div>
+                    </td>
+                </tr>
+        </table>
+        </div>
+		<jsp:include page="../parts/footer.jsp" />
+
+</body>
 </html>

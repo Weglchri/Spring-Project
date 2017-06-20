@@ -3,17 +3,35 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
+<body>
 
     <jsp:include page="../parts/header.jsp" />
 
-    <body>
-        <form:form method = "POST" action="/users/update" modelAttribute="userForm" >
+    <div class="container">
+        <h2>Update</h2>
+
+
+        <form:form class="form-horizontal" method = "POST" action="/users/update" modelAttribute="userForm" >
+
             <form:hidden path="id" />
-            Firstname: <form:input type="text" path="firstname" />
-            Lastname: <form:input type="text" path="lastname" />
-            <input type="submit" value="Submit"/>
+
+        <div class="form-group">
+            <label>Firstname:</label>
+            <form:input type="text" path="firstname" id="firstname" class="form-control"  />
+        </div>
+
+        <div class="form-group">
+            <label>Lastname:</label>
+            <form:input type="text" path="lastname" id="lastname" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Update</button>
+        </div>
+
         </form:form>
-    </body>
+
+        <jsp:include page="../parts/footer.jsp" />
+
+</body>
 </html>
