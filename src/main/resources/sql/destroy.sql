@@ -1,1 +1,1 @@
-DROP DATABASE prototypedb;
+DROP DATABASE prototype_database;

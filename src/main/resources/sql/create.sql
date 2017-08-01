@@ -1,6 +1,6 @@
-CREATE DATABASE prototypedb;
+CREATE DATABASE prototype_database;
 
-USE prototypedb;
+USE prototype_database;
 
 CREATE TABLE User (
   id int(100),

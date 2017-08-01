@@ -19,11 +19,11 @@ public class SequenceGenerator {
 
     public int generateId() {
         List<User> users = userDao.findAll();
-        int number = userDao.findAll().size();
-        if(number == 0){
+        int size = userDao.findAll().size();
+        if(size == 0){
             return 0;
         }else{
-            int lastpos = number - 1;
+            int lastpos = size - 1;
             int id = users.get(lastpos).getId();
             return id + 1;
         }

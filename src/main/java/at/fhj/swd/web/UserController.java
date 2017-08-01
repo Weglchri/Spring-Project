@@ -29,20 +29,20 @@ public class UserController {
 		this.sequenceGenerator = sequenceGenerator;
 	}
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)				//check
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index(Model model) {
 		return "redirect:/users";
 	}
 
 	// list all users
-	@RequestMapping(value = "/users", method = RequestMethod.GET)			//check
+	@RequestMapping(value = "/users", method = RequestMethod.GET)
 	public String showAllUsers(Model model) {
 		model.addAttribute("users", userService.findAll());
 		return "users/list";
 	}
 
 	// show add form
-	@RequestMapping(value = "/users/add", method = RequestMethod.GET)		//check
+	@RequestMapping(value = "/users/add", method = RequestMethod.GET)
 	public String showAddUserForm(Model model) {
 		User user = new User();
 		model.addAttribute("userForm", user);

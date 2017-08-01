@@ -16,7 +16,7 @@
 
             <div class="form-group">
                 <label>Firstname:</label>
-                <form:input type="text" path="firstname" id="firstname" class="form-control"  />
+                <form:input type="text" path="firstname" id="firstname" class="form-control" />
             </div>
 
             <div class="form-group">

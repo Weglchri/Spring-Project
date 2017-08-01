@@ -15,7 +15,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.9.RELEASE" />
-          <element id="library" level="project" name="Maven: org.hsqldb:hsqldb:2.3.2" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.9" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.0.3.RELEASE" />
